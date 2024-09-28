@@ -47,10 +47,10 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1727402732941",
-    "key" : "2krd2",
+    "timestamp" : "1727509387785",
+    "key" : "2krob",
     "mapWidth" : "640",
-    "mapHeight" : "500"
+    "mapHeight" : "360"
   }).render();`);
     scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
@@ -99,27 +99,34 @@ const Location = () => {
       </Divider>
       <Image src={Flower} />
       <Map
-        id="daumRoughmapContainer1727402732941"
+        id="daumRoughmapContainer1727509387785"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        경남 진주시 동진로 415 진주종합경기장내
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
+        MBC 컨벤션진주 대연회장
         <br />
         <br />
         <Title>버스 이용시</Title>
         <br />
         <br />
-        410-1, 401 호텔수성 앞 하차
+        진주 종합경기장/중진공 정류장 하차 후 종합경기장 내 MBC컨벤션진주
         <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
-        <br />
-        <br />
-        <Title>지하철 이용시</Title>
+        150번, 280번, 281번, 290번, 292번, 293번, 300번, 300-1번, 301번, 301-1번, 10번
         <br />
         <br />
-        3호선 수성못역 하차 (도보 10분)
+        <Title>자가용 이용시</Title>
+        <br />
+        <br />
+        부산·대구 방면에서 오시는 경우
+        <br />
+        문산IC - 문산교방면 - 문산교 - 진주종합경기장
+        <br />
+        <br />
+        통영·여수·함양 방면에서 오시는 경우
+        <br />
+        진주IC - 공단광장 사거리에서 우회전 - 남강교 교차로 - 남강교 - 진주종합경기장
       </Content>
     </Wrapper>
   );

@@ -52,7 +52,6 @@ const IndexPage = () => {
       <Title />
       <Greeting />
       <Location />
-      <Quote />
       <CongratulatoryMoney />
       <Footer
         style={{
@@ -62,10 +61,11 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2022 Shin Jooyoung
+        Copyright © 2024 Joohyun Baek
       </Footer>
     </Wrapper>
   );
 };
 
 export default IndexPage;
+export {Head} from "../components/head";

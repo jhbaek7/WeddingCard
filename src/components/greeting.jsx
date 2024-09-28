@@ -55,23 +55,23 @@ const Greeting = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
-        <Title data-aos="fade-up">초대합니다</Title>
+        <Title>초대합니다</Title>
       </Divider>
       <Image data-aos="fade-up" src={Flower} />
       <Content data-aos="fade-up">
-        서로 마주 보며 다져온 사랑을
+        거리가 멀어 본식에 참석하지 못하시는 분들을 위해
         <br />
         <br />
-        이제 함께 한곳을 바라보며 걸어갈 수 있는
+        작은 피로연 자리를 마련하였습니다.
         <br />
         <br />
-        큰 사랑으로 키우고자 합니다.
+        부디 참석하시어 
         <br />
         <br />
-        저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게
+        두 사람의 앞날을 축복해 주시기 바랍니다.
         <br />
         <br />
-        앞날을 축복해 주시면 감사하겠습니다.
+        감사합니다.
       </Content>
       <GroomBride data-aos="fade-up">
         {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 장남 {GROOM_NAME}

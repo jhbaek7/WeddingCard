@@ -3,11 +3,13 @@ import styled from "styled-components";
 import {
   WEDDING_DATE,
   WEDDING_LOCATION,
+  WEDDING_TIME,
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
 import BackgroundVideo from "../assets/BackgroundVideo.mp4";
 import GroovePaper from "../assets/GroovePaper.png";
+import Main from "../assets/main.jpg";
 
 const Layout = styled.div`
   width: 70%;
@@ -49,23 +51,34 @@ const Schedule = styled.p`
   opacity: 0.65;
   margin-bottom: 24px;
 `;
+
+const Image = styled.img`
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 42px;
+`;
+
 const Title = () => {
   return (
     <Layout>
       <TitleWrapper>
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
         <GroomBride>
-          {GROOM_NAME} &#38; {BRIDE_NAME}
+          신부측 피로연 안내
         </GroomBride>
         <Schedule>
           {WEDDING_DATE}
           <br />
+          {WEDDING_TIME}
+          <br />
           {WEDDING_LOCATION}
         </Schedule>
       </TitleWrapper>
-      <VideoBackground autoPlay loop muted playsInline={true}>
+      <Image src={Main} />
+      {/* <VideoBackground autoPlay loop muted playsInline={true}>
         <source src={BackgroundVideo} type="video/mp4" />
-      </VideoBackground>
+      </VideoBackground> */}
     </Layout>
   );
 };
